@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* texto general */
+
+body{
+    background-color: white;
+    color: black;
+    font-family:  'Inter', sans-serif;
+    text-align: justify;
+}
+
+main{
+    margin: 5rem 1rem 1rem 1rem
+}
+
+footer{
+    text-align: center;
+    border-top: 5px solid;
+    border-color: rgb(32, 73, 165);
+    padding: 15px 15px 15px 15px
+}
+
+/*Menu de Navegacion y footer*/
+
+.menu-logo{
+    max-width: 4rem;
+    border-radius: 10px;
+
+}
+
+.social-logo{
+    max-width: 3rem;
+    border-radius: 10px;
+}
+
+nav{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+/*Flexbox en pagina Nosotros */
+
+.cajas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 20px;
+    justify-content: center;
+} 
+
+.caja  {
+    width: 100%;
+    height: auto;
+}
+.caja img{
+    width: 100%;
+    height: 100%;
+}
+
+/*GRID en pagina de Servicios */
+
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas:
+    'area1'
+    'area2'
+    'area3'
+    'area4'
+    'area5'
+    'area6'
+    'area7'
+    'area8'
+    'area9'
+    'area10'
+}
+
+.grillas{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(32, 72, 165);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    border-radius: 7px;
+    box-shadow: 3px 3px 2px 2px rgb(193, 193, 193);
+
+}
+
+.card-grid-desc{
+    padding: 10px;
+}
+
+.card-grid-h2{
+    padding: 5px;
+    text-align: center;
+}
+
+.g1{
+    grid-area: area1;
+}
+.g2{
+    grid-area: area2;
+}
+.g3{
+    grid-area: area3;
+}
+.g4{
+    grid-area: area4;
+}
+.g5{
+    grid-area: area5;
+}
+.g6{
+    grid-area: area6;
+}
+.g7{
+    grid-area: area7;
+}
+.g8{
+    grid-area: area8;
+}
+.g9{
+    grid-area: area9;
+}
+.g10{
+    grid-area: area10;
+}
+
+/*foto mapa*/
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .clientes {
+    width: 150px;
+    height: 150px;
+  }
+
+/*media queries*/
+
+@media  (min-width:587px) {
+
+/*menu*/
+
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+/*GRID en pagina de Servicios */
+
+    .grilla{
+        grid-template-columns: repeat(2,2fr);
+        height: 100%;
+        grid-template-areas:
+        'area1 area2'
+        'area3 area3'
+        'area4 area4'
+        'area5 area6'
+        'area7 area7'
+        'area8 area9'
+        'area10 area10'
+
+        ;
+    }
+
+/* mapa */
+.center {
+    width: 80%;
+  }
+
+}
+
+@media  (min-width:720px) {
+    
+/*flex nosotros*/
+    .caja  {
+        width: 300px;
+        height: 300px;
+    }
+    .caja img{
+        width: 100%;
+        height: 300px;
+    }
+
+/*GRID en pagina de Servicios */
+
+    .grilla{
+        grid-template-columns: repeat(3,2fr);
+        grid-template-areas:
+        'area1 area2 area2'
+        'area3 area4 area5'
+        'area6 area6 area7'
+        'area8 area8 area9'
+        'area10 area10 area10'
+        ;
+    }
+        }
