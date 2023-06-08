@@ -1,0 +1,69 @@
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas:
+    'area1'
+    'area2'
+    'area3'
+    'area4'
+    'area5'
+    'area6'
+    'area7'
+    'area8'
+    'area9'
+    'area10'
+}
+
+.grillas{
+    width: 100%;
+    height: 200px;
+    background-color:rgb(223, 220, 220);
+    color: rgb(32, 73, 165);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+
+.card-grid-desc{
+    padding: 10px;
+}
+
+.card-grid-h2{
+    padding: 5px;
+    text-align: center;
+}
+
+.g1{
+    grid-area: area1;
+}
+.g2{
+    grid-area: area2;
+}
+.g3{
+    grid-area: area3;
+}
+.g4{
+    grid-area: area4;
+}
+.g5{
+    grid-area: area5;
+}
+.g6{
+    grid-area: area6;
+}
+.g7{
+    grid-area: area7;
+}
+.g8{
+    grid-area: area8;
+}
+.g9{
+    grid-area: area9;
+}
+.g10{
+    grid-area: area10;
+}
