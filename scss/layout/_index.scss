@@ -3,9 +3,8 @@ main{
     color: $main-color;
     }
 
-   .mainpic{
-        width: 100%;
-        height: 400px;
+   img{
+        @include imagenes(100%,500px,cover)
         }
     }
 

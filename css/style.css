@@ -1,3 +1,4 @@
+/* bases para todas las paginas */
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
   padding: 0px;
@@ -20,6 +21,17 @@ footer {
   border-top: 5px solid;
   border-color: rgb(32, 73, 165);
   padding: 15px 15px 15px 15px;
+}
+
+/*mixing*/
+/*mixing sin parametros*/
+/*extend*/
+.d-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 nav {
@@ -54,9 +66,10 @@ footer .social-logo {
 main h1 {
   color: rgb(32, 73, 165);
 }
-main .mainpic {
+main img {
   width: 100%;
-  height: 400px;
+  height: 500px;
+  object-fit: cover;
 }
 
 .clientes {
